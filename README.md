@@ -7,6 +7,7 @@ and under cd /root/.ssh/ copy the id_rsa.pub key and do the ssh-keygen on tomcat
 after try to ping from ansible server to tomcat using ssh 10.100.8.0 (private ip of tomcat server)
 and under ansble server cd /etc/ansible under that hosts file past the private ip address of tomcat so that they both can talk.
 # configuring on Jenkins 
+
 In order to deploy on war file from ansible to tomcat server we need do install one plugin called publish over ssh.
 Now go to jenkins in manage jenkins in Configure System there will option called ssh server.
 Under ssh server give name as ansible and Hostname as tomcate private address and username as ec2-user 
